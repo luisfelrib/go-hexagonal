@@ -22,7 +22,7 @@ go run main.go
 #Create file inside cmd folder (cobra add [file-name])
 cobra add cli
 ```
-- Roando Command Line Interface 
+- Rodando Command Line Interface 
 ```bash
 #Create product in the database
 go run main.go cli -a=create -n="Product from CLI" -p=25.0
