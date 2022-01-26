@@ -6,6 +6,21 @@
 ```bash
 mockgen -destination=application/mocks/application.go -source=application/product.go application
 ```
+**SQLite**
+- Banco de dados SQL implementado direto em cima de um arquivo
+```bash
+#Create database file
+touch db.sqlite
+#Open database with SQLite3
+sqlite3 db.sqlite
+#Create table using SQLite3 terminal
+create table products(id string, name string, price float, status string);
+```
+- Adicionando modulos de comandos
+```bash
+#Create file inside cmd folder (cobra add [file-name])
+cobra add cli
+```
 **Cobra**
 - Aplicação que facilita o uso de CLI
 - Configuração
@@ -21,9 +36,4 @@ go run main.go
 ```bash
 #Create file inside cmd folder (cobra add [file-name])
 cobra add cli
-```
-- Rodando Command Line Interface 
-```bash
-#Create product in the database
-go run main.go cli -a=create -n="Product from CLI" -p=25.0
 ```
