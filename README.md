@@ -1,4 +1,4 @@
-# Projeto Go com Arquitetura Hexagonal do cusrso Full Cycle 2.0
+# Projeto Go com Arquitetura Hexagonal
 
 ## Ferramentas e comandos uteis no desenvolvimento
 **Mockgen**
